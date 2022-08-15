@@ -111,6 +111,37 @@ html {
   background-position: center;
   background-size: cover;
 }
+@media (min-width: 37.5em) {
+  .pri-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: 37.5em) {
+  .header-section {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.impact {
+  width: 100%;
+  position: relative;
+}
+.impact__bdg {
+  width: 100%;
+}
+.impact__textbox {
+  width: 25%;
+  position: absolute;
+  top: 934px;
+  left: 193px;
+}
 
 .font-big {
   font-size: 4.5rem;
