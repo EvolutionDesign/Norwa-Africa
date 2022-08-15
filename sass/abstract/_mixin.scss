@@ -1,0 +1,48 @@
+@mixin textCenter {
+  display: flex;
+  align-items: center;
+}
+
+/*
+  Media Query Manager
+  
+  Breakpoints : Screens         : nickname
+  
+  0-600 px    : phone           : phone
+  600-900 px  : tablet-portrait : tab-port
+  900-1200 px : tablet-landscape: tab-land
+  1200-1800 px: normal becoz its desktop first method
+  1800px +    : Big Monitor     : big-screen
+  
+  1em = 16px
+  */
+
+@mixin respond($breakpoint) {
+  //phone breakpoint
+  @if $breakpoint==phone {
+    @media (max-width: 37.5em) {
+      @content;
+    }
+  }
+
+  //tab-port breakpoint
+  @if $breakpoint==tab-port {
+    @media (max-width: 56.25em) {
+      @content;
+    }
+  }
+
+  //tab-land breakpoint
+  @if $breakpoint==tab-land {
+    @media (max-width: 75em) {
+      @content;
+    }
+  }
+
+  //big screen breakpoint
+  @if $breakpoint==big-screen {
+    @media (min-width: 112.5em) {
+      @content;
+    }
+  }
+}
