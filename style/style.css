@@ -197,8 +197,6 @@ html {
   flex-direction: column;
   align-items: flex-end;
   justify-content: flex-end;
-  background-image: url("./images/Rectangle-curve-png.png");
-  background-size: cover;
 }
 
 .disp {
