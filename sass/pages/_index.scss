@@ -35,9 +35,77 @@
   }
 
   &__textbox {
-    width: 25%;
-    position: absolute;
-    top: 934px;
-    left: 193px;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    @include respond(phone) {
+      width: 25%;
+      position: absolute;
+      top: 934px;
+      left: 193px;
+      text-align: left;
+    }
   }
+
+  &__images {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    @include respond(phone) {
+      width: 80%;
+      margin: 4rem auto;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      text-align: center;
+    }
+  }
+}
+
+.solutions {
+  &__heading {
+    text-align: center;
+  }
+
+  &__solution {
+    width: 75%;
+    height: 60vh;
+    margin: 0 auto;
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  &__bdg {
+    background: linear-gradient(
+      1.05deg,
+      #ffffff -27.02%,
+      rgba(255, 255, 255, 0) 99.16%
+    );
+  }
+
+  &__brand {
+    text-align: end;
+    width: 45%;
+  }
+
+  &__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  &__linear {
+    width: 75%;
+    height: 125vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+
+.disp {
+  display: flex;
 }
