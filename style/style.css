@@ -141,11 +141,15 @@ html {
   margin: 0 auto;
   text-align: center;
 }
+@media (min-width: 75em) {
+  .impact__textbox {
+    top: 631px;
+  }
+}
 @media (min-width: 37.5em) {
   .impact__textbox {
     width: 25%;
     position: absolute;
-    top: 934px;
     left: 193px;
     text-align: left;
   }
@@ -167,6 +171,10 @@ html {
   }
 }
 
+.solutions {
+  position: relative;
+  overflow: hidden;
+}
 .solutions__heading {
   text-align: center;
 }
@@ -182,25 +190,62 @@ html {
   background: linear-gradient(1.05deg, #ffffff -27.02%, rgba(255, 255, 255, 0) 99.16%);
 }
 .solutions__brand {
-  text-align: end;
-  width: 45%;
+  text-align: center;
+  width: 90%;
+}
+@media (min-width: 37.5em) {
+  .solutions__brand {
+    width: 45%;
+    text-align: end;
+  }
 }
 .solutions__btn {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: center;
+}
+@media (min-width: 37.5em) {
+  .solutions__btn {
+    justify-content: flex-end;
+  }
 }
 .solutions__linear {
-  width: 75%;
+  width: 95%;
   height: 125vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 37.5em) {
+  .solutions__linear {
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+}
+.solutions__curve {
+  display: none;
+}
+@media (min-width: 37.5em) {
+  .solutions__curve {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: -186px;
+    width: 100%;
+    height: 161vh;
+    z-index: -1;
+  }
 }
 
 .disp {
   display: flex;
+}
+
+.products {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
 }
 
 .font-big {
@@ -262,6 +307,7 @@ html {
   font-style: normal;
   font-weight: 400;
   letter-spacing: 0.05em;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

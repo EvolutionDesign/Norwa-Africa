@@ -38,10 +38,12 @@
     width: 80%;
     margin: 0 auto;
     text-align: center;
+    @include respond(tab-land){
+      top: 631px;
+    }
     @include respond(phone) {
       width: 25%;
       position: absolute;
-      top: 934px;
       left: 193px;
       text-align: left;
     }
@@ -64,6 +66,8 @@
 }
 
 .solutions {
+  position: relative;
+  overflow: hidden;
   &__heading {
     text-align: center;
   }
@@ -86,26 +90,60 @@
   }
 
   &__brand {
-    text-align: end;
-    width: 45%;
+    text-align: center;
+    width: 90%;
+    @include respond(phone){
+      width: 45%;
+      text-align: end;
+    }
   }
 
   &__btn {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    justify-content: center;
+
+    @include respond(phone) {
+      justify-content: flex-end;
+    }
   }
 
   &__linear {
-    width: 75%;
+
+    width: 95%;
     height: 125vh;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include respond(phone){
     align-items: flex-end;
     justify-content: flex-end;
+    }
+  }
+
+  &__curve {
+   display: none;
+
+    @include respond(phone) {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      right: -186px;
+      width: 100%;
+      height: 161vh;
+      z-index: -1;
+    }
   }
 }
 
 .disp {
   display: flex;
+}
+
+
+.products {
+  text-align: center;
+  margin: 0 auto;
+  width: 75%;
 }
