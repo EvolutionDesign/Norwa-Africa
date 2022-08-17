@@ -1,42 +1,32 @@
 .btn {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 .pri-btn,
 .sec-btn {
-    width: 120px;
-    height: 40px;
-    border-radius: 5px;
+  width: 120px;
+  height: 40px;
+  border-radius: 5px;
 
-    border: none;
-    
-    &:focus {
-        outline: none;
-    }
+  border: none;
 
-    @include respond(phone){
-        width: 176px;
-        height: 59px;
-        box-sizing: 15px;
-    }
+  &:focus {
+    outline: none;
+  }
+
+  @include respond(phone) {
+    width: 176px;
+    height: 59px;
+    box-sizing: 15px;
+  }
 }
 
 .pri-btn {
-    background-color: $color-orange;
+  background-color: $color-orange;
 }
 
 .sec-btn {
-    border: 1px solid $color-orange;
-    background-color: transparent;
-}
-
-.link-btn {
-    &:link,
-    &:visited {
-        font-family: $pri-font;
-        font-style: normal;
-        font-weight: 700;
-        text-decoration: none;
-    }
+  border: 1px solid $color-orange;
+  background-color: transparent;
 }

@@ -97,13 +97,6 @@ html {
   background-color: transparent;
 }
 
-.link-btn:link, .link-btn:visited {
-  font-family: "Montserrat", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  text-decoration: none;
-}
-
 .pri-header {
   width: 100%;
   height: 100vh;
@@ -135,24 +128,19 @@ html {
 }
 .impact__bdg {
   width: 100%;
+  height: 135vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: end;
+  background-image: url("../images/africa-logos.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .impact__textbox {
-  width: 80%;
-  margin: 0 auto;
-  text-align: center;
-}
-@media (min-width: 75em) {
-  .impact__textbox {
-    top: 631px;
-  }
-}
-@media (min-width: 37.5em) {
-  .impact__textbox {
-    width: 25%;
-    position: absolute;
-    left: 193px;
-    text-align: left;
-  }
+  width: 45%;
+  padding-left: 14rem;
 }
 .impact__images {
   display: flex;
@@ -168,6 +156,21 @@ html {
     align-items: center;
     justify-content: space-between;
     text-align: center;
+  }
+}
+.impact__image {
+  height: 32vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.impact__img {
+  width: 45%;
+}
+@media (min-width: 37.5em) {
+  .impact__img {
+    width: 60%;
   }
 }
 
@@ -247,6 +250,18 @@ html {
   margin: 0 auto;
   width: 75%;
 }
+.products__product {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.products__product--details {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
 .font-big {
   font-size: 4.5rem;
@@ -308,6 +323,21 @@ html {
   font-weight: 400;
   letter-spacing: 0.05em;
   text-transform: capitalize;
+}
+
+.link:link, .link:visited {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 21px;
+  text-decoration: none;
+}
+
+.link-btn:link, .link-btn:visited {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
