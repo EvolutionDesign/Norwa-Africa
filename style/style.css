@@ -177,6 +177,9 @@ html {
 .solutions {
   position: relative;
   overflow: hidden;
+  background-image: url("../images/Rectangle-curve.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
 }
 .solutions__heading {
   text-align: center;
@@ -200,6 +203,7 @@ html {
   .solutions__brand {
     width: 45%;
     text-align: end;
+    margin-bottom: 10rem;
   }
 }
 .solutions__btn {
@@ -214,7 +218,7 @@ html {
 }
 .solutions__linear {
   width: 95%;
-  height: 125vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;

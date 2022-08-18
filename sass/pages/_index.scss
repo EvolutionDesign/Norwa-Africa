@@ -96,6 +96,10 @@
 .solutions {
   position: relative;
   overflow: hidden;
+  background-image: url("../images/Rectangle-curve.svg");
+  background-repeat: no-repeat;
+  background-position: right bottom;
+
   &__heading {
     text-align: center;
   }
@@ -123,6 +127,8 @@
     @include respond(phone) {
       width: 45%;
       text-align: end;
+
+      margin-bottom: 10rem;
     }
   }
 
@@ -138,7 +144,7 @@
 
   &__linear {
     width: 95%;
-    height: 125vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
