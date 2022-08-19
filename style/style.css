@@ -281,8 +281,19 @@ html {
   display: flex;
   flex-direction: column-reverse;
 }
+@media (min-width: 37.5em) {
+  .product-nav__sect {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
 .product-nav__sect--header {
   display: none;
+}
+@media (min-width: 37.5em) {
+  .product-nav__sect--header {
+    display: block;
+  }
 }
 .product-nav__sect--subheader {
   width: 100%;
@@ -291,6 +302,17 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+@media (min-width: 37.5em) {
+  .product-nav__sect--subheader {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: end;
+  }
 }
 
 .font-big {
