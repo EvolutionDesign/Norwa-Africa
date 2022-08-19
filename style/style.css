@@ -267,6 +267,32 @@ html {
   justify-content: space-evenly;
 }
 
+.product-nav__header {
+  width: 100%;
+  height: 75vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.product-nav__sect {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.product-nav__sect--header {
+  display: none;
+}
+.product-nav__sect--subheader {
+  width: 100%;
+  height: 25vh;
+  background-color: grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .font-big {
   font-size: 4.5rem;
 }
