@@ -1,0 +1,48 @@
+.sproduct {
+  flex-direction: column;
+  justify-content: initial;
+
+  @include respond(tab-land) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  &__details {
+    width: 100%;
+
+    @include respond(tab-land) {
+      width: 60%;
+    }
+  }
+}
+
+.psolutions {
+  width: 100%;
+  margin: initial;
+  @include respond(tab-land) {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.psolutions-img__images {
+  width: 100%;
+  height: 100vh;
+  background: black;
+}
+
+.psolutions-logo {
+  width: 100%;
+  background-color: grey;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  &__img {
+    width: 150px;
+    height: 100px;
+    background-color: black;
+  }
+}

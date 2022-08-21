@@ -3,8 +3,4 @@
   font-style: normal;
   font-weight: 300;
   letter-spacing: 0.05em;
-
-  @include respond(phone){
-    line-height: 45px;
-  }
 }
