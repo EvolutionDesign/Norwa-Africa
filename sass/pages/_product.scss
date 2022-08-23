@@ -46,3 +46,22 @@
     background-color: black;
   }
 }
+
+.data-sheets {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    &--img {
+      background-color: grey;
+      width: 150px;
+      height: 100px;
+    }
+  }
+}

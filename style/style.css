@@ -318,6 +318,24 @@ html {
   background-color: black;
 }
 
+.data-sheets {
+  width: 100%;
+  height: 30vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.data-sheets__logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.data-sheets__logo--img {
+  background-color: grey;
+  width: 150px;
+  height: 100px;
+}
+
 .product-nav__header {
   width: 100%;
   height: 75vh;
