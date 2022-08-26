@@ -4,4 +4,11 @@
   font-weight: 700;
 }
 
-
+.heading-bdg {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: url("../images/water-bdg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

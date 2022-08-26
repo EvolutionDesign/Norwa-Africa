@@ -97,6 +97,10 @@ html {
   background-color: transparent;
 }
 
+.display-img {
+  display: none;
+}
+
 .pri-header {
   width: 100%;
   height: 100vh;
@@ -424,6 +428,15 @@ html {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
+}
+
+.heading-bdg {
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  background-image: url("../images/water-bdg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .text {
