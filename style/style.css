@@ -98,7 +98,35 @@ html {
 }
 
 .display-img {
+  display: block !important;
+}
+
+.psolutions-img {
   display: none;
+}
+.psolutions-img__images {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/water-treatment-chemicals-media.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.psolutions-logo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.psolutions-logo__img {
+  width: 150px;
+  height: 100px;
+}
+.psolutions-logo__img--size {
+  width: 100%;
+  height: 100%;
 }
 
 .pri-header {
@@ -302,26 +330,6 @@ html {
   }
 }
 
-.psolutions-img__images {
-  width: 100%;
-  height: 100vh;
-  background: black;
-}
-
-.psolutions-logo {
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-}
-.psolutions-logo__img {
-  width: 150px;
-  height: 100px;
-  background-color: black;
-}
-
 .data-sheets {
   width: 100%;
   height: 30vh;
@@ -389,38 +397,38 @@ html {
 }
 
 .font-big {
-  font-size: 3.75rem;
+  font-size: 3.2rem;
 }
 @media (min-width: 37.5em) {
   .font-big {
-    font-size: 6rem;
+    font-size: 4.8rem;
   }
 }
 
 .font-meduim {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 @media (min-width: 37.5em) {
   .font-meduim {
-    font-size: 4.5rem;
+    font-size: 2.4rem;
   }
 }
 
 .font-small {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
 }
 @media (min-width: 37.5em) {
   .font-small {
-    font-size: 2.7rem;
+    font-size: 2rem;
   }
 }
 
 .font-smaller {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
 }
 @media (min-width: 37.5em) {
   .font-smaller {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 

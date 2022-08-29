@@ -26,27 +26,6 @@
   }
 }
 
-.psolutions-img__images {
-  width: 100%;
-  height: 100vh;
-  background: black;
-}
-
-.psolutions-logo {
-  width: 100%;
-  background-color: grey;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-
-  &__img {
-    width: 150px;
-    height: 100px;
-    background-color: black;
-  }
-}
-
 .data-sheets {
   width: 100%;
   height: 30vh;
