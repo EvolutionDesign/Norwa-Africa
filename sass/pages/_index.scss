@@ -9,59 +9,79 @@
     url(/images/Landing-page.jpg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
   @include respond(phone) {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
 }
 .header-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
   @include respond(phone) {
     width: 50%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
+    text-align: left;
+    align-items: flex-start;
   }
 }
 
 .impact {
   width: 100%;
-  position: relative;
+
+  @include respond(phone) {
+    height: 160vh;
+  }
 
   &__bdg {
+    position: relative;
     width: 100%;
-    height: 135vh;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: end;
-    background-image: url("../images/africa-logos.png");
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    height: 100%;
+
+    @include respond(tab-land) {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+
+    &--image {
+      width: 100%;
+      height: 60vh;
+      display: flex;
+      justify-content: center;
+
+      @include respond(tab-land) {
+        height: 100%;
+
+        position: absolute;
+        z-index: -1;
+      }
+    }
+
+    &--textbox {
+      width: 100%;
+      text-align: center;
+
+      @include respond(tab-land) {
+        width: 45%;
+        padding-left: 14rem;
+        text-align: left;
+      }
+    }
+
+    &--img {
+      height: 100%;
+    }
   }
 
-  &__textbox {
-    width: 45%;
-    padding-left: 14rem;
-    // width: 80%;
-    // margin: 0 auto;
-    // text-align: center;
-    // @include respond(tab-land) {
-    //   top: 631px;
-    // }
-    // @include respond(phone) {
-    //   width: 25%;
-    //   position: absolute;
-    //   top: 930px;
-    //   left: 193px;
-    //   text-align: left;
-    // }
-  }
-
-  &__images {
+  &__card {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,21 +94,18 @@
       justify-content: space-between;
       text-align: center;
     }
-  }
 
-  &__image {
-    height: 32vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-  }
+    &--image {
+      height: 45vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
 
-  &__img {
-    width: 45%;
-
-    @include respond(phone) {
-      width: 60%;
+    &--img {
+      width: 100%;
+      height: 100%;
     }
   }
 }
@@ -96,7 +113,7 @@
 .solutions {
   position: relative;
   overflow: hidden;
-  background-image: url("../images/Rectangle-curve.svg");
+  background-image: url("../images/Mask group.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 
@@ -105,12 +122,16 @@
   }
 
   &__solution {
-    width: 75%;
+    width: 100%;
     height: 60vh;
     margin: 0 auto;
     display: none;
     flex-direction: column;
     justify-content: flex-end;
+
+    @include respond(phone) {
+      width: 75%;
+    }
   }
 
   &__bdg {
@@ -177,19 +198,34 @@
 .products {
   text-align: center;
   margin: 0 auto;
-  width: 75%;
+  width: 95%;
 
   &__product {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 
     &--details {
-      height: 85vh;
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+
+    &--img {
+      width: 100%;
+      height: 330px;
+
+      @include respond(phone) {
+        width: 400px;
+      }
+    }
+
+    &--image {
+      width: auto;
+      height: 95%;
     }
   }
 }

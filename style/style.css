@@ -135,53 +135,88 @@ html {
   background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url(/images/Landing-page.jpg);
   background-position: center;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 @media (min-width: 37.5em) {
   .pri-header {
-    display: flex;
     flex-direction: row;
     justify-content: flex-end;
   }
 }
 
-@media (min-width: 37.5em) {
-  .header-section {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-.impact {
-  width: 100%;
-  position: relative;
-}
-.impact__bdg {
-  width: 100%;
-  height: 135vh;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: end;
-  background-image: url("../images/africa-logos.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.impact__textbox {
-  width: 45%;
-  padding-left: 14rem;
-}
-.impact__images {
+.header-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
 @media (min-width: 37.5em) {
-  .impact__images {
+  .header-section {
+    width: 50%;
+    height: 100%;
+    justify-content: center;
+    text-align: left;
+    align-items: flex-start;
+  }
+}
+
+.impact {
+  width: 100%;
+}
+@media (min-width: 37.5em) {
+  .impact {
+    height: 160vh;
+  }
+}
+.impact__bdg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+@media (min-width: 75em) {
+  .impact__bdg {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+}
+.impact__bdg--image {
+  width: 100%;
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+}
+@media (min-width: 75em) {
+  .impact__bdg--image {
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+  }
+}
+.impact__bdg--textbox {
+  width: 100%;
+  text-align: center;
+}
+@media (min-width: 75em) {
+  .impact__bdg--textbox {
+    width: 45%;
+    padding-left: 14rem;
+    text-align: left;
+  }
+}
+.impact__bdg--img {
+  height: 100%;
+}
+.impact__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+@media (min-width: 37.5em) {
+  .impact__card {
     width: 80%;
     margin: 4rem auto;
     flex-direction: row;
@@ -190,26 +225,22 @@ html {
     text-align: center;
   }
 }
-.impact__image {
-  height: 32vh;
+.impact__card--image {
+  height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
 }
-.impact__img {
-  width: 45%;
-}
-@media (min-width: 37.5em) {
-  .impact__img {
-    width: 60%;
-  }
+.impact__card--img {
+  width: 100%;
+  height: 100%;
 }
 
 .solutions {
   position: relative;
   overflow: hidden;
-  background-image: url("../images/Rectangle-curve.svg");
+  background-image: url("../images/Mask group.svg");
   background-repeat: no-repeat;
   background-position: right bottom;
 }
@@ -217,12 +248,17 @@ html {
   text-align: center;
 }
 .solutions__solution {
-  width: 75%;
+  width: 100%;
   height: 60vh;
   margin: 0 auto;
   display: none;
   flex-direction: column;
   justify-content: flex-end;
+}
+@media (min-width: 37.5em) {
+  .solutions__solution {
+    width: 75%;
+  }
 }
 .solutions__bdg {
   background: linear-gradient(1.05deg, #ffffff -27.02%, rgba(255, 255, 255, 0) 99.16%);
@@ -284,19 +320,33 @@ html {
 .products {
   text-align: center;
   margin: 0 auto;
-  width: 75%;
+  width: 95%;
 }
 .products__product {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .products__product--details {
-  height: 85vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.products__product--img {
+  width: 100%;
+  height: 330px;
+}
+@media (min-width: 37.5em) {
+  .products__product--img {
+    width: 400px;
+  }
+}
+.products__product--image {
+  width: auto;
+  height: 95%;
 }
 
 .sproduct {
@@ -393,6 +443,73 @@ html {
     justify-content: flex-end;
     align-items: flex-end;
     text-align: end;
+  }
+}
+
+.bdg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  top: 0;
+  left: 0;
+  position: absolute;
+  z-index: -1;
+}
+.background__color {
+  width: 0;
+  height: 100%;
+  background-color: #0a1215;
+}
+@media (min-width: 56.25em) {
+  .background__color {
+    width: 70%;
+  }
+}
+.background__image {
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/waves.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (min-width: 56.25em) {
+  .background__image {
+    width: 30%;
+  }
+}
+
+.contact {
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 6rem;
+}
+@media (min-width: 56.25em) {
+  .contact {
+    width: 70%;
+  }
+}
+
+.form {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 10px;
+  height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 6rem;
+}
+@media (min-width: 56.25em) {
+  .form {
+    width: 80%;
   }
 }
 
