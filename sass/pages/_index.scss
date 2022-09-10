@@ -231,31 +231,46 @@
 }
 //src="./images/africa-logos.png" - 70.2
 
-.bdglogo {
-  width: 80%;
-  height: 160vh;
-  position: relative;
+.impact {
+  width: 100%;
+  height: 130vh;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-end;
-  margin: 0 auto;
+  align-items: center;
+  @include respond(tab-land) {
+    width: 80%;
+    height: 160vh;
+    position: relative;
+    align-items: flex-start;
+    justify-content: flex-end;
+    margin: 0 auto;
+  }
 
-  &__red {
+  &__background {
     background-image: url("../images/africa-logos.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     width: 100%;
-    height: 100%;
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 70%;
+    @include respond(tab-land) {
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
   }
 
-  &__blue {
-    width: 426px;
-    height: 356px;
+  &__text {
+    width: 100%;
+    height: 30%;
+    text-align: center;
+    @include respond(tab-land) {
+      width: 426px;
+      height: 356px;
+      text-align: start;
+    }
   }
 }
