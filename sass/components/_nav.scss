@@ -1,54 +1,62 @@
-.topnav {
-  overflow: hidden;
-  background-color: #333;
-}
+.main-nav {
+  padding: 0 2rem;
+  position: fixed;
+  z-index: 100;
+  background-color: rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 
-.topnav a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
+  &__header {
+    display: flex;
+    align-items: center;
 
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.topnav .icon {
-  display: none;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a:not(:first-child) {
-    display: none;
+    &--logo {
+      width: 57px;
+      height: 80px;
+    }
   }
-  .topnav a.icon {
-    float: right;
-    display: block;
-  }
-}
 
-@media screen and (max-width: 600px) {
-  .topnav.responsive {
+  &__menu {
+    width: 80px;
+    height: 80px;
     position: relative;
+    transform: translate(0%, 24%);
+
+    @include respond(tab-land) {
+      display: none;
+    }
   }
-  .topnav.responsive .icon {
+
+  &__cross {
+    display: none;
+    width: 80px;
+    height: 80px;
+    transform: translate(0%, 24%);
+  }
+
+  &__links {
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
     position: absolute;
-    right: 0;
-    top: 0;
-  }
-  .topnav.responsive a {
-    float: none;
-    display: block;
-    text-align: left;
+    display: none;
+    width: 100%;
+    top: 80px;
+    left: 0;
+
+    @include respond(tab-land) {
+      position: static;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      justify-content: space-between;
+      width: 72%;
+      background-color: transparent;
+      box-shadow: none;
+    }
   }
 }

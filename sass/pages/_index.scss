@@ -1,12 +1,8 @@
 .pri-header {
   width: 100%;
   height: 100vh;
-  background-image: linear-gradient(
-      0deg,
-      rgba(0, 0, 0, 0.65),
-      rgba(0, 0, 0, 0.65)
-    ),
-    url(/images/Landing-page.jpg);
+  background-image: url("../images/water-treament.jpg");
+  background-attachment: fixed;
   background-position: center;
   background-size: cover;
   display: flex;
@@ -128,10 +124,6 @@
     display: none;
     flex-direction: column;
     justify-content: flex-end;
-
-    @include respond(phone) {
-      width: 75%;
-    }
   }
 
   &__bdg {
@@ -227,6 +219,14 @@
       width: auto;
       height: 95%;
     }
+    &--text {
+      width: 100%;
+
+      @include respond(tab-land) {
+        width: 60%;
+        margin: 0 auto;
+      }
+    }
   }
 }
 //src="./images/africa-logos.png" - 70.2
@@ -247,7 +247,6 @@
   }
 
   &__background {
-    background-image: url("../images/africa-logos.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -273,4 +272,12 @@
       text-align: start;
     }
   }
+}
+
+.img-water-hands {
+  background-image: url("../images/Water-on-hands.jpg");
+}
+
+.img-logos {
+  background-image: url("../images/africa-logos.jpg");
 }
