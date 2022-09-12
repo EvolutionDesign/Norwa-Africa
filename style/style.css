@@ -50,6 +50,15 @@ html {
   }
 }
 
+.padding-right-10 {
+  padding-right: 10rem;
+}
+@media (min-width: 75em) {
+  .padding-right-10 {
+    padding-right: none;
+  }
+}
+
 .color-white {
   color: white;
 }
@@ -108,6 +117,11 @@ html {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+}
+@media (min-width: 75em) {
+  .main-nav {
+    padding: 0 10rem;
+  }
 }
 .main-nav__header {
   display: flex;
@@ -225,9 +239,7 @@ html {
 .arrow-right {
   position: absolute;
   width: 50px;
-  height: 100px;
   top: 50%;
-  background-color: #000;
 }
 
 .arrow-left {
@@ -359,7 +371,6 @@ html {
   }
 }
 .impact__card--image {
-  height: 45vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -367,7 +378,6 @@ html {
 }
 .impact__card--img {
   width: 100%;
-  height: 100%;
 }
 
 .solutions {
@@ -841,6 +851,14 @@ html {
   font-style: normal;
   font-weight: 300;
   font-size: 21px;
+  text-decoration: none;
+}
+
+.menu-nav-link:link, .menu-nav-link:visited {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.6rem;
   text-decoration: none;
 }
 

@@ -10,6 +10,10 @@
   align-items: center;
   width: 100%;
 
+  @include respond(tab-land) {
+    padding: 0 10rem;
+  }
+
   &__header {
     display: flex;
     align-items: center;

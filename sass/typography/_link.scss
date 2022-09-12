@@ -9,6 +9,17 @@
   }
 }
 
+.menu-nav-link {
+  &:link,
+  &:visited {
+    font-family: $pri-font;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 1.6rem;
+    text-decoration: none;
+  }
+}
+
 .link-btn {
   &:link,
   &:visited {
