@@ -23,10 +23,10 @@
 }
 
 .padding-right-10 {
-  padding-right: 10rem;
+  padding-right: none;
 
   @include respond(tab-land) {
-    padding-right: none;
+    padding-right: 10rem;
   }
 }
 

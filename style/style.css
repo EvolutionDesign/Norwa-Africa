@@ -51,11 +51,11 @@ html {
 }
 
 .padding-right-10 {
-  padding-right: 10rem;
+  padding-right: none;
 }
 @media (min-width: 75em) {
   .padding-right-10 {
-    padding-right: none;
+    padding-right: 10rem;
   }
 }
 
@@ -424,7 +424,7 @@ html {
 }
 .solutions__linear {
   width: 95%;
-  height: 100vh;
+  height: 35vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -432,6 +432,7 @@ html {
 }
 @media (min-width: 37.5em) {
   .solutions__linear {
+    height: 100vh;
     align-items: flex-end;
     justify-content: flex-end;
   }
@@ -498,7 +499,7 @@ html {
 
 .impact {
   width: 100%;
-  height: 130vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -518,7 +519,7 @@ html {
   background-repeat: no-repeat;
   background-size: contain;
   width: 100%;
-  height: 70%;
+  height: 62%;
 }
 @media (min-width: 75em) {
   .impact__background {
