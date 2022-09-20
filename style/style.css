@@ -1,16 +1,16 @@
 /*
- Media Query Manager
+  Media Query Manager
 
- Breakpoints : Screens         : nickname
+  Breakpoints : Screens         : nickname
 
- 0-600 px    : phone           : phone
- 600-900 px  : tablet-portrait : tab-port
- 900-1200 px : tablet-landscape: tab-land
- 1200-1800 px: normal becoz its desktop first method
- 1800px +    : Big Monitor     : big-screen
+  0-600 px    : phone           : phone
+  600-900 px  : tablet-portrait : tab-port
+  900-1200 px : tablet-landscape: tab-land
+  1200-1800 px: normal becoz its desktop first method
+  1800px +    : Big Monitor     : big-screen
 
- 1em = 16px
- */
+  1em = 16px
+  */
 *,
 *::after,
 *::before {
@@ -604,12 +604,15 @@ html {
 .product-nav__header {
   width: 100%;
   height: 75vh;
-  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
 }
 .product-nav__sect {
   display: flex;
@@ -632,10 +635,12 @@ html {
 .product-nav__sect--subheader {
   width: 100%;
   height: 25vh;
-  background-color: grey;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 @media (min-width: 37.5em) {
   .product-nav__sect--subheader {
