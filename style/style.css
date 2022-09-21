@@ -71,6 +71,10 @@ html {
   color: #f26522;
 }
 
+.overflow {
+  overflow: auto;
+}
+
 .btn {
   display: flex;
   flex-direction: row;
