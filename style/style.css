@@ -583,6 +583,7 @@ html {
 .psolutions {
   width: 100%;
   margin: initial;
+  padding-top: 12rem;
 }
 @media (min-width: 75em) {
   .psolutions {
@@ -705,7 +706,7 @@ html {
 .contact {
   width: 100%;
   margin: 0 auto;
-  padding-top: 6rem;
+  padding-top: 12rem;
 }
 @media (min-width: 56.25em) {
   .contact {
