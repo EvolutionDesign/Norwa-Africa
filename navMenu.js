@@ -7,14 +7,14 @@ navBtnOpen.addEventListener("click", (e) => {
  e.preventDefault()
 
  navBtnOpen.style.display = "none"
- navBtnClosed.style.display = "block"
+ navBtnClosed.style.display = "flex"
 
  menuNavContent.classList.toggle("navigation__content--active")
 })
 
 navBtnClosed.addEventListener("click", (e) => {
  e.preventDefault()
- navBtnOpen.style.display = "block"
+ navBtnOpen.style.display = "flex"
  navBtnClosed.style.display = "none"
 
  menuNavContent.classList.toggle("navigation__content--active")

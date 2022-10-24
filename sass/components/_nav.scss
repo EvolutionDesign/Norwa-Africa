@@ -89,13 +89,13 @@
   &--logo {
    width: 20rem;
    height: 100%;
-   background-color: white;
+   display: flex;
+   align-items: center;
   }
 
   &--btn {
    width: 7.5rem;
    height: 100%;
-   background-color: white;
 
    &:hover .navigation__content {
     display: block;
@@ -104,12 +104,16 @@
   &--btnOpen {
    width: 100%;
    height: 100%;
-   background-color: aqua;
+   display: flex;
+   justify-content: center;
+   align-items: center;
   }
   &--btnClosed {
    width: 100%;
    height: 100%;
-   background-color: red;
+   display: flex;
+   justify-content: center;
+   align-items: center;
    display: none;
   }
  }
