@@ -1,66 +1,138 @@
 .main-nav {
-  padding: 0 2rem;
-  position: fixed;
-  z-index: 100;
+ padding: 0 2rem;
+ position: fixed;
+ z-index: 100;
+ background-color: rgba(0, 0, 0, 0.6);
+ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+
+ @include respond(tab-land) {
+  padding: 0 10rem;
+ }
+
+ &__header {
+  display: flex;
+  align-items: center;
+
+  &--logo {
+   width: 57px;
+   height: 80px;
+  }
+ }
+
+ &__menu {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  transform: translate(0%, 24%);
+
+  @include respond(tab-land) {
+   display: none;
+  }
+ }
+
+ &__cross {
+  display: none;
+  width: 80px;
+  height: 80px;
+  transform: translate(0%, 24%);
+ }
+
+ &__links {
   background-color: rgba(0, 0, 0, 0.6);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  position: absolute;
+  display: none;
+  width: 100%;
+  top: 80px;
+  left: 0;
+
+  @include respond(tab-land) {
+   position: static;
+   display: flex;
+   flex-direction: row;
+   list-style: none;
+   justify-content: space-between;
+   width: 72%;
+   background-color: transparent;
+   box-shadow: none;
+  }
+ }
+}
+
+.navigation {
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ z-index: 100;
+
+ &__main {
+  position: relative;
+ }
+
+ &__header {
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  //positioning
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
+
+  &--logo {
+   width: 20rem;
+   height: 100%;
+   display: flex;
+   align-items: center;
+  }
+
+  &--btn {
+   width: 7.5rem;
+   height: 100%;
+
+   &:hover .navigation__content {
+    display: block;
+   }
+  }
+  &--btnOpen {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  }
+  &--btnClosed {
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   display: none;
+  }
+ }
+
+ &__content {
+  display: none;
+  position: absolute;
+  left: 0;
   width: 100%;
+  height: 0vh;
+  background-color: rgba(0, 0, 0, 0.6);
 
-  @include respond(tab-land) {
-    padding: 0 10rem;
+  &--active {
+   display: block !important;
+   height: 50vh;
   }
+ }
+}
 
-  &__header {
-    display: flex;
-    align-items: center;
-
-    &--logo {
-      width: 57px;
-      height: 80px;
-    }
-  }
-
-  &__menu {
-    width: 80px;
-    height: 80px;
-    position: relative;
-    transform: translate(0%, 24%);
-
-    @include respond(tab-land) {
-      display: none;
-    }
-  }
-
-  &__cross {
-    display: none;
-    width: 80px;
-    height: 80px;
-    transform: translate(0%, 24%);
-  }
-
-  &__links {
-    background-color: rgba(0, 0, 0, 0.6);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    text-align: center;
-    position: absolute;
-    display: none;
-    width: 100%;
-    top: 80px;
-    left: 0;
-
-    @include respond(tab-land) {
-      position: static;
-      display: flex;
-      flex-direction: row;
-      list-style: none;
-      justify-content: space-between;
-      width: 72%;
-      background-color: transparent;
-      box-shadow: none;
-    }
-  }
+.transform {
+ transition: all 2s ease;
 }

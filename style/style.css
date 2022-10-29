@@ -50,6 +50,20 @@ html {
   }
 }
 
+.padding-for-nav {
+  padding: 0 1rem;
+}
+@media (min-width: 37.5em) {
+  .padding-for-nav {
+    padding: 0 5rem;
+  }
+}
+@media (min-width: 56.25em) {
+  .padding-for-nav {
+    padding: 0 10rem;
+  }
+}
+
 .padding-right-10 {
   padding-right: none;
 }
@@ -177,6 +191,69 @@ html {
     background-color: transparent;
     box-shadow: none;
   }
+}
+
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.navigation__main {
+  position: relative;
+}
+.navigation__header {
+  width: 100%;
+  height: 7rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation__header--logo {
+  width: 20rem;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.navigation__header--btn {
+  width: 7.5rem;
+  height: 100%;
+}
+.navigation__header--btn:hover .navigation__content {
+  display: block;
+}
+.navigation__header--btnOpen {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navigation__header--btnClosed {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.navigation__content {
+  display: none;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 0vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+.navigation__content--active {
+  display: block !important;
+  height: 50vh;
+}
+
+.transform {
+  transition: all 2s ease;
 }
 
 .display-img {
@@ -844,6 +921,10 @@ html {
   background-image: url("../images/water-bdg.jpg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.logo-nav {
+  height: 100%;
 }
 
 .text {
