@@ -64,6 +64,10 @@ html {
   }
 }
 
+.margin-top-medium {
+  margin-top: 7rem;
+}
+
 .padding-right-10 {
   padding-right: none;
 }
@@ -206,7 +210,7 @@ html {
 .navigation__header {
   width: 100%;
   height: 7rem;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.85);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -239,13 +243,41 @@ html {
   align-items: center;
   display: none;
 }
+.navigation__contentDesktop--header, .navigation__contentDesktop--link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.navigation__contentDesktop--card {
+  width: 190px;
+}
 .navigation__content {
   display: none;
   position: absolute;
   left: 0;
   width: 100%;
   height: 0vh;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.navigation__content--desktop {
+  display: none;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  flex-direction: column;
+}
+@media (min-width: 75em) {
+  .navigation__content--desktop {
+    display: flex;
+  }
+}
+.navigation__content--mobile {
+  display: block;
+}
+@media (min-width: 75em) {
+  .navigation__content--mobile {
+    display: none;
+  }
 }
 .navigation__content--active {
   display: block !important;
@@ -924,7 +956,7 @@ html {
 }
 
 .logo-nav {
-  height: 100%;
+  height: 75%;
 }
 
 .text {
