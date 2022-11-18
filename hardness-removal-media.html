@@ -19,86 +19,193 @@
     <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
-    <nav class="main-nav">
-      <div class="main-nav__header">
-        <img
-          class="main-nav__header--logo"
-          src="./images/logo.svg"
-          alt="logo"
-        />
-        <div class="main-nav__header--heading">
-          <h3
-            class="font-meduim sub-header color-white"
-            style="font-weight: bold;"
-          >
-            Norwa <br />
-            Africa
-          </h3>
+    <nav class="navigation">
+      <div class="navigation__main">
+        <div class="navigation__header padding-for-nav">
+          <div class="navigation__header--logo">
+            <img class="logo-nav" src="./images/logo.svg" alt="logo" />
+            <h1 class="font-meduim heading color-white">Norwa<br />Africa</h1>
+          </div>
+          <div class="navigation__header--btn">
+            <div class="navigation__header--btnOpen" id="menuNavBtnOpen">
+              <iconify-icon
+                icon="line-md:menu-fold-left"
+                style="color: white;"
+                class="font-big"
+              ></iconify-icon>
+            </div>
+            <div class="navigation__header--btnClosed" id="menuNavBtnClosed">
+              <iconify-icon
+                icon="line-md:menu-to-close-alt-transition"
+                style="color: white;"
+                class="font-big"
+              ></iconify-icon>
+            </div>
+          </div>
+        </div>
+        <div class="navigation__content transform padding-for-nav">
+          <div class="navigation__content--desktop">
+            <div class="navigation__contentDesktop">
+              <div class="navigation__contentDesktop--header">
+                <div class="navigation__contentDesktop--card">
+                  <h1 class="color-white heading font-small">
+                    Water treatment
+                  </h1>
+                  <p class="color-white text">
+                    Our water treatment solutions & products are designed to
+                    treat water for domestic, industrial and commercial
+                    applications
+                  </p>
+                  <p class="color-white text font-smaller">
+                    Click the link below &darr;
+                  </p>
+                </div>
+                <div class="navigation__contentDesktop--card">
+                  <h1 class="color-white heading">Water pumps</h1>
+                  <p class="color-white text">
+                    We understand there is need for water pumping solutions that
+                    improve quality of life hence we are offering widest
+                    selection of water pumps in all sizes and for every
+                    imaginable application.
+                  </p>
+                  <p class="color-white text font-smaller">
+                    Click the link below &darr;
+                  </p>
+                </div>
+                <div class="navigation__contentDesktop--card">
+                  <h1 class="color-white heading">Data sheets</h1>
+                  <p class="color-white text">
+                    Norwa Africa provides operating data sheets for our users to
+                    experience consistent and reliable system performance
+                    regarding the proper and safe operation, maintenance, and
+                    handling of our products and solutions.
+                  </p>
+                  <p class="color-white text font-smaller">
+                    Click the link below &darr;
+                  </p>
+                </div>
+                <div class="navigation__contentDesktop--card">
+                  <h1 class="color-white heading">Connect</h1>
+                  <p class="color-white text">
+                    Want to chat? We’d love to hear from you! Get in touch with
+                    our Customer Success Team to inquire about water treatment,
+                    water pumps, or just say hello.
+                  </p>
+                  <p class="color-white text font-smaller">
+                    Click the link below &darr;
+                  </p>
+                </div>
+              </div>
+              <hr />
+              <div class="navigation__contentDesktop--link">
+                <div class="navigation__contentDesktop--card">
+                  <ul class="color-white">
+                    <li>
+                      <a
+                        class="link color-white"
+                        href="./commercial-industrial-water-treatment-solutions.html"
+                        >Commercial water treatment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="link color-white"
+                        href="./domestic-water-treatment-water-pumping-solutions.html"
+                        >Domestic water treatment</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="link color-white"
+                        href="./water-treatment-chemicals-media.html"
+                        >Water treatment chemicals & media</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="navigation__contentDesktop--card">
+                  <ul class="color-white">
+                    <li>
+                      <a
+                        class="link color-white"
+                        href="./domestic-commercial-industrial-water-pumps.html"
+                        >Water pumps</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="navigation__contentDesktop--card">
+                  <ul class="color-white">
+                    <li>
+                      <a class="link color-white" href="">Data sheets</a>
+                    </li>
+                    <li>
+                      <a class="link color-white" href=""
+                        >Upload your water analysis</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div class="navigation__contentDesktop--card">
+                  <ul class="color-white">
+                    <li>
+                      <a class="link color-white" href="./about.html"
+                        >About us</a
+                      >
+                    </li>
+                    <li>
+                      <a class="link color-white" href="./contact-us.html"
+                        >Contact us</a
+                      >
+                    </li>
+                    <li><a class="link color-white" href="">Careers</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="navigation__content--mobile">
+            <li class="color-orange font-meduim">
+              <a
+                href="./commercial-industrial-water-treatment-solutions.html"
+                class="link color-white"
+                >Commercial water treatment</a
+              >/
+              <a
+                href="./domestic-water-treatment-water-pumping-solutions.html"
+                class="link color-white"
+                >Domestic water treatment</a
+              >/
+              <a
+                href="./water-treatment-chemicals-media.html"
+                class="link color-white"
+                >Water treatment chemicals & media</a
+              >
+            </li>
+            <li class="color-orange font-meduim">
+              <a
+                href="./domestic-commercial-industrial-water-pumps.html"
+                class="link color-white"
+                >Water pumps</a
+              >
+            </li>
+            <li class="color-orange font-meduim">
+              <a href="" class="link color-white">Data sheets</a>/
+              <a href="" class="link color-white">Upload your water analysis</a>
+            </li>
+            <li class="color-orange font-meduim">
+              <a href="./about.html" class="link color-white">About us</a>/
+              <a href="./contact-us.html" class="link color-white"
+                >Contact us </a
+              >/<a href="" class="link color-white">Careers</a>
+            </li>
+          </ul>
         </div>
       </div>
-
-      <ul class="main-nav__links" id="link-menu">
-        <li>
-          <a
-            class="menu-nav-link color-white"
-            href="./commercial-industrial-water-treatment-solutions.html"
-            >Commercial water treatment</a
-          >
-        </li>
-        <li>
-          <a
-            class="menu-nav-link color-white"
-            href="./domestic-water-treatment-water-pumping-solutions.html"
-            >Domestic water treatment</a
-          >
-        </li>
-        <li>
-          <a
-            class="menu-nav-link color-white"
-            href="./water-treatment-chemicals-media.html"
-            >Chemicals & media</a
-          >
-        </li>
-        <li>
-          <a
-            class="menu-nav-link color-white"
-            href="./domestic-commercial-industrial-water-pumps.html"
-            >Water pumps</a
-          >
-        </li>
-        <li>
-          <a class="menu-nav-link color-white" href="./data-sheets.html"
-            >Data sheets</a
-          >
-        </li>
-        <li>
-          <a
-            class="menu-nav-link color-white"
-            style="margin-right: 15px;"
-            href="./contact-us.html"
-            >Contact us</a
-          >
-        </li>
-        <li>
-          <a class="menu-nav-link color-white" href="./about.html">About us</a>
-        </li>
-      </ul>
-      <iconify-icon
-        icon="charm:menu-hamburger"
-        class="main-nav__menu"
-        id="menu"
-        style="color: white; font-size: 4.5rem;"
-      ></iconify-icon>
-      <iconify-icon
-        icon="akar-icons:cross"
-        style="color: white; font-size: 4.5rem;"
-        class="main-nav__cross"
-        id="cross"
-      ></iconify-icon>
     </nav>
     <main>
       <section class="psolutions">
-        <h1 class="heading font-big margin-bottom-big">
+        <h1 class="heading font-big margin-bottom-big heading-bdg">
           Hardness removal media
         </h1>
         <div class="sproduct">
@@ -107,15 +214,25 @@
               *Quick access
             </h3>
             <ul>
-              <li><a href="" class="link color-orange">Media tanks</a></li>
               <li>
-                <a href="" class="link color-orange">Renegeration media</a>
+                <a
+                  href="./frp-tanks-for-water-purifier-media.html"
+                  class="link color-orange"
+                  >Media tanks</a
+                >
               </li>
               <li>
-                <a href="" class="link color-orange">Pumps</a>
+                <a href="./renegeration-media.html" class="link color-orange"
+                  >Renegeration media</a
+                >
               </li>
-              <li><a href="" class="link color-orange">Accessories</a></li>
-              <li><a href="" class="link color-orange">Images</a></li>
+              <li>
+                <a
+                  href="./domestic-commercial-industrial-water-pumps.html"
+                  class="link color-orange"
+                  >Pumps</a
+                >
+              </li>
             </ul>
           </nav>
           <div class="sproduct__details">
@@ -128,8 +245,6 @@
                 suphonic acid.
               </p>
             </div>
-          </div>
-          <div class="sproduct__details">
             <div class="">
               <h2 class="font-meduim heading">
                 Resin anion
@@ -142,17 +257,40 @@
           </div>
         </div>
       </section>
-      <section class="psolutions-img margin-bottom-big">
+      <section class="psolutions-img margin-bottom-big margin-top-medium">
         <!-- <div class="psolutions-img__arrow-left"></div>
         <div class="psolutions-img__arrow-right"></div> -->
-        <div class="psolutions-img__images"></div>
+        <img
+          src="./images/water-treatment-chemicals-media.jpg"
+          class="psolutions-img__images"
+          alt=""
+          srcset=""
+        />
       </section>
       <section class="psolutions-logo">
-        <div class="psolutions-logo__img"></div>
-        <div class="psolutions-logo__img"></div>
-        <div class="psolutions-logo__img"></div>
-        <div class="psolutions-logo__img"></div>
+        <img
+          src="./images/logo/cnp-logo.png"
+          alt=""
+          class="psolutions-logo__img"
+        />
+        <img
+          src="./images/logo/hidrotek-logo.jpg"
+          alt=""
+          class="psolutions-logo__img"
+        />
+        <img
+          src="./images/logo/purolite.jpg"
+          alt=""
+          class="psolutions-logo__img"
+        />
+        <img
+          src="./images/logo/Pentair_logo_logotype.png"
+          alt=""
+          class="psolutions-logo__img"
+        />
       </section>
     </main>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="./navMenu.js"></script>
   </body>
 </html>
